@@ -1,0 +1,51 @@
+.primary-button {
+    @extend %reset-button;
+    height: 48px;
+    width: 128px;
+    background-color: $brand-01;
+    text-align: center;
+    color: $text-inverse;
+    /* Will transition background color and font changes*/
+    transition: background-color 0.4s;
+
+    &:hover {
+        background-color: $hover-primary;
+    }
+
+    &:active {
+        background-color: $hover-primary;
+    }
+
+    &:disabled,
+    &.disabled {
+        background-color: $ui-04;
+        cursor: not-allowed;
+    }
+}
+
+.primary-button-tag {
+    @extend %reset-a;
+    @extend %flex-center;
+    height: 48px;
+    width: 128px;
+    background-color: $brand-01;
+    text-align: center;
+    color: $text-inverse;
+    cursor: pointer;
+    /* Will transition background color and font changes*/
+    transition: background-color 0.4s;
+
+    &:hover {
+        background-color: $hover-primary;
+    }
+
+    &:active {
+        background-color: $hover-primary;
+    }
+
+    &:disabled,
+    &.disabled {
+        background-color: $ui-04;
+        cursor: not-allowed;
+    }
+}

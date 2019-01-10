@@ -1,0 +1,39 @@
+/* Noto Sans font face declaration */
+
+/* For get-font information look at _functions */
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url("#{get-font($roboto-font-map, 'medium-woff2')}") format('woff2'),
+        url("#{get-font($roboto-font-map, 'medium-woff')}") format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+        url("#{get-font($roboto-font-map, 'medium-italic-woff2')}") format('woff2'),
+        url("#{get-font($roboto-font-map, 'medium-italic-woff')}") format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+        url("#{get-font($roboto-font-map, 'regular-woff2')}") format('woff2'),
+        url("#{get-font($roboto-font-map, 'regular-woff')}") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+        url("#{get-font($roboto-font-map, 'regular-italic-woff2')}") format('woff2'),
+        url("#{get-font($roboto-font-map, 'regular-italic-woff')}") format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

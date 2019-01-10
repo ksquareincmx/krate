@@ -1,0 +1,8 @@
+.text-input {
+    @extend %reset-text-input;
+    border: 1px solid $ui-01;
+
+    &::placeholder {
+        color: $text-01;
+    }
+}

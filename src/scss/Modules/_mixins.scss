@@ -1,0 +1,11 @@
+@mixin roboto-semibold ($style) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: $style;
+}
+
+@mixin roboto-regular ($style) {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: $style;
+}

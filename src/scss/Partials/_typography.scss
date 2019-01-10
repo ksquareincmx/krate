@@ -1,0 +1,129 @@
+/* Font families */
+.roboto {
+    @include roboto-regular('normal');
+}
+
+.roboto-italic {
+    @include roboto-regular('italic');
+}
+
+.roboto-semibold {
+    @include roboto-semibold('normal');
+}
+
+.roboto-semibold-italic {
+    @include roboto-semibold('italic');
+}
+
+/* Font sizes */
+
+.h1 {
+    @extend .roboto-semibold;
+    line-height: 48px;
+    font-size: 32px;
+}
+
+.h2 {
+    @extend .roboto-semibold;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.h3 {
+    @extend .roboto-semibold;
+    line-height: 21px;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.h4 {
+    @extend .roboto-semibold;
+    line-height: 24px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.h5 {
+    @extend .roboto-semibold;
+    line-height: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.subheading {
+    @extend .roboto;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.body1 {
+    @extend .roboto;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.body2 {
+    @extend .roboto;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.body3 {
+    @extend .roboto;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.body-text-link1 {
+    @extend .roboto-semibold;
+    line-height: 32px;
+    font-size: 16px;
+    text-decoration-line: underline;
+
+    &:active,
+    &:hover {
+        color: inherit;
+    }
+}
+
+.body-text-link2 {
+    @extend .roboto;
+    line-height: 32px;
+    font-size: 12px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+
+    &:active,
+    &:hover {
+        color: inherit;
+    }
+}
+
+%button-text {
+    @extend .roboto-semibold;
+    line-height: 16px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+%button-text2 {
+    @extend .roboto-semibold;
+    line-height: 16px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+%label {
+    @extend .roboto;
+    line-height: 16px;
+    font-size: 16px;
+    text-decoration-line: line-through;
+}
+
+%label2 {
+    @extend .roboto;
+    line-height: 16px;
+    font-size: 18px;
+}
