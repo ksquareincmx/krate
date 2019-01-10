@@ -1,0 +1,26 @@
+{
+  "name": "sass-dev-env",
+  "version": "1.0.0",
+  "description": "Fast development environment for sass",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "npm-run-all -p build-task-dev:*",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true src/scss/ -o dist/css",
+    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer --use cssnano --no-cssnano.discardUnused --no-cssnano.discardComments -d dist/css",
+    "build-task-dev:scss-compile": "node-sass-chokidar --source-map true src/scss/ -o dev/css",
+    "build-task-dev:autoprefixer": "postcss dev/css/*.css --use autoprefixer -d dev/css",
+    "build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
+  },
+  "author": "Eduardo Del Aguila Maldonado",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.3",
+    "chokidar-cli": "^1.2.1",
+    "cssnano": "^4.1.7",
+    "node-sass-chokidar": "^1.3.4",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.1"
+  }
+}
